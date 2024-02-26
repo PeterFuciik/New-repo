@@ -1,0 +1,24 @@
+button{
+  background-color: red, !important; /* upřednostní prvek před ostatníma*/ 
+}
+
+p {
+  color: blue;
+}
+
+.btn-primary {
+  background-color: yellow;
+}
+
+.second{
+  font-family: verdana;
+}
+
+body{
+  background-color: #f3f3f3;
+}
+
+w-100{
+  width: 200px;
+  height: 200px;
+}

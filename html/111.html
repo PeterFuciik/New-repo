@@ -1,0 +1,43 @@
+POČÍTÁNÍ ČÍSEL
+
+@echo off
+cls
+echo hádání náhodného čísla
+set /a x=%random%/3280
+set /p y=zadejte cele cislo od 1 do 9
+set spravne = 0
+set nespravne = 0
+if x == q {
+  spravne + 1
+} els {
+  nespravne + 1
+}
+if %x% EQU %y% (echo vyborne uhadl jste!)
+else (echo nespravny tip)
+echo nahodne cislo bylo: %x%
+echo vy jste tipoval %y%
+set /p q=data 
+echo Na schledanou uhádli jste: %spravne% odopvědí, neuhádl jste: %nesparvne% odpovědí.
+
+
+BMI INDEX
+
+@echo off
+cls 
+:beginnign
+echo Výpočet indexu BMI
+set /p x=Zadejte vaši hmotnost v kg:
+set /p y=Zadejte vaši výšku v cm:
+set /a z= 
+echo Vaše BMI jest %z%
+if %z% = LEQ 19 echo Trpíte podváhou
+if %z% GTR 19 if %z% LEQ 25 echo Máte ideální váhu
+if %z% GTR 25 if %z% LEQ 30 echo Máte mírnou nadváhu
+if %z% GTR 30 if %z% LEQ 35 echo Jste mírně obézní
+if %z% GTR 35 if %z% LEQ 40 echo Trpíte středně těžkou obezitou
+
+if %z% GTR 40 echo Jste těžce obézní, musíte zhubnout!
+set /p q=Prejete si zadat nový výpočet? [a/n]
+
+if %q% ==a goto beggining 
+echo Na schledanou

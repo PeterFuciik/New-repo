@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+    <h1>INteraktivní formulář</h1>
+
+    <form id="myForm">
+       <label for="email">E-mail:</label>
+       <input type="email" id="email" name="email" required>
+      <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required> 
+      <br>
+        <label>Zpráva</label>
+        <textarea name="input" id="input1" cols="30" rows="10"></textarea>
+      <br>
+        <button type="button" id="submitBtn">odeslat</button>
+      <br>
+    </form>
+
+    <div id="output"></div>
+</body>
+</html>
+<script>
+
+    // Funkce, která se zavolá po stisknutí tlačítka "Odeslat"
+    function odeslatFormular() {
+        // Získání hodnot z pole pro jméno, e-mail a zprávu
+        var jmeno = document.getElementById("jmeno").value;
+        var email = document.getElementById("email").value;
+        var zprava = document.getElementById("input1").value;
+
+        // Zobrazení hodnot v novém elementu
+        var outputElement = document.getElementById("output");
+        outputElement.innerHTML = "Jméno: " + jmeno + "<br>E-mail: " + email + "<br>Zpráva: " + zprava;
+    }
+
+    // Přiřazení funkce k tlačítku "Odeslat"
+    document.getElementById("submitBtn").addEventListener("click", odeslatFormular);
+    // nedokončený všechno 
+</script>

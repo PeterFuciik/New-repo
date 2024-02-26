@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neviditelné prvky</title>
+
+  <style>
+    div#skryty{
+        background-color: red;
+        display: none; /* skryje prvek*/
+    }
+    button:hover{
+        scale: 1.2;
+    }
+  </style>
+
+</head>
+<body>
+  
+    <button onclick="odkryt()">klikni na mě</button>
+    <div id="skryty">
+        Ahoj světe
+    </div>
+
+    <button onclick="zakryt()">
+        skryj mě
+    </button>
+
+    <buttonon onclick="vytvorit">
+        vytvořit odstavec s textem
+    </button>
+
+</body>
+</html>
+<script>
+
+    function odkryt(){
+        document.getElementById("skryty").style.display = "block";
+    }
+
+    function skryt(){
+      document.getElementById("skryty").style.display = "style: display: none;" 
+
+    }
+
+    function vytvořit(){
+        const paragraf = document.createElement("p"); //vytvoří proměnou která generuje prvek <p>
+        paragraf.innerHTML = "tohle je generovaný paragraf"; // dopplní obsha odsatvce
+        document.body.appendChild(paragraf); // appendchild - vytvoří prvek na konec vybraného prvku rodiče (zde body)
+    }
+
+</script>

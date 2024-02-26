@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML DOM - Události</title>
+
+    <style>
+        a:hover{
+            color: red;
+            scale: 2;
+        } 
+        a:active{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>HTML dom - události</h1>
+    <!-- události jsou akce, které se stanou ana zíkladě jiných stisknutí tlačítka
+         Přejetí myší přes prvke, přepsání hodnoty atd.-->
+    <H2>události</H2>
+    <!--onClick-->
+    <a href="https://www.google.com" onclick="barva_stranky">
+
+    <h1 id="greetings">Vítejte</h1>
+    <form>
+        <input type="text" name="jmeno" placeholder="Zadej jméno">
+        <button type="submit">Odeslat</button>
+        <
+    </form>
+</body>
+</html>
+
+<script>
+    document.getElementById("greetings").innerHTML += "uživateli!";
+    document.body.style.backgroundColor = "#ccc";
+    document.getElementsByName("jmeno")[0].style.fontFamily = "Cambria";
+
+    function barva_stranky
+    (){
+        Document.body.style.bacgroundcolot = "red";
+    }
+
+    function odeslat 
+    () {
+        const jmeno = document.getElementByName("jmeno")[0];
+        //constz je typ proměnné která se nemění
+        const ulozeni = jmeno.value 
+        // Pro příkazy s eventy, kdy chceme získávat obsah jiných prvků HTML - které mají i jiné datové 
+        // typy obsahu, Nam vallue, type a podobné dovolují vybrat přesný obsah
+
+        DOCUMENT.getElementById("greetings").innerHTMl = "Vítejte, " + jmeno.value;//
+    }
+
+</script>

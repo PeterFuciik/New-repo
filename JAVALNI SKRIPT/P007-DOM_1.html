@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div id="prnvi"></div>
+    <H1 class="text">Toto je nadpis class 1</H1>
+    <p class="text">Toto je první odstave s class txt</p>
+    <p class="text">Toto je druhý odstavec s class txts</p>
+    <div id="druhy"></div>
+
+    <form>
+      <label for="jmeno">Jméno:</label>
+      <input type="text" name="jmeno" value="Jan">
+    </form>
+</body>
+</html>
+
+<script>
+    // struktura DOM:
+    // document - objekt = musí být vždycky!!
+    // 
+
+    document.getElementById("prvni").innerHTML = "Ahoj světe!"; 
+    // - najde prvek s ID "prvni" a vloží do něj "Ahoj světe!"
+
+    document.body.innerHTML = "toto je obsah stránky";
+    // při spuštění kodu se řepíše obsah stránky na text v druhém příkazu a tak zanikne div a tak i první příkaz 
+
+    const datum = date();
+    document.getElementById("prvni").innerHTMl += datum; 
+    // - nejde prvek s id "prvni" a vloží do něj datum
+    
+    document.body.style.backgroundColor = "#ccc";
+    // změní barvu na pozadí stránku na šedou
+
+    document.getElementById("druhý").innerHTMl = "Toto je ukázka getElementById";
+    //1. Užití getElementById
+
+    document.getElementsByClassName("text")[0].style.color = "red";
+    // změní barvu v prvním prvku  s class "text" na červenou
+    // [0] - vybere první index s class "text"
+    // změna barvy  
+
+    document.getElementsByTagName("p")[1].style.color("blue");
+
+
+
+
+
+</script>

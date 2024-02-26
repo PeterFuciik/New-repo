@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hierarchie CSS</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/        Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        img{
+            width: 200px;
+        };
+        
+        /* snippet co řeší 90% problémů s alignem všeho*/
+        div.polozka{ /* snippet co řeší 90% problémů s alignem všeho*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        };
+        
+        /* @media udává změnu css kódu při určité velikosti obrazovky*/
+        @media screen {
+            div.polozka{
+              flex-wrap: nowrap;
+            };
+        }
+    </style>
+</head>
+<body>
+
+        <div class="polozka">
+            <img src="\\srvad\users\FucPet21\Plocha\www\gibonanus.jpeg" alt="nate higgers">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui hic libero, tenetur aperiam veniam nulla iste, molestiae totam ad quam atque temporibus ipsum corrupti odit dolorem, suscipit recusandae placeat commodi.
+            </p>
+        </div  class="polozka">
+        <div>
+          <img src="\\srvad\users\FucPet21\Plocha\www\gibonanus.jpeg" alt="tf">¨
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eos cum neque et, illo quasi sunt. Consequatur, ab consectetur provident reiciendis facere architecto quos, ipsum quisquam, cupiditate quod voluptatibus quasi?
+          </p>
+      </div>      
+      <div>
+        <img src="\\srvad\users\FucPet21\Plocha\www\gibonanus.jpeg" alt="u oh">¨
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eos cum neque et, illo quasi sunt. Consequatur, ab consectetur provident reiciendis facere architecto quos, ipsum quisquam, cupiditate quod voluptatibus quasi?
+        </p>
+      </div>
+  
+</body>
+</html>
